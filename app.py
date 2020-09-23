@@ -42,8 +42,8 @@ def main():
                                  'Date first added',
                                  'Founded']])
 
-    st.sidebar.subheader('Select asset')
-    asset = st.sidebar.selectbox('Click below to select a new asset',
+    st.sidebar.subheader('Select Companies')
+    asset = st.sidebar.selectbox('Click below to select the company from the list',
                                  components.index.sort_values(), index=3,
                                  format_func=label)
     title.title(components.loc[asset].Security)
@@ -53,7 +53,7 @@ def main():
     data = data0.copy().dropna()
     data.index.name = None
 
-    section = st.sidebar.slider('Number of quotes', min_value=30,
+    section = st.sidebar.slider('Number of observations', min_value=30,
                         max_value=min([2000, data.shape[0]]),
                         value=500,  step=10)
 
