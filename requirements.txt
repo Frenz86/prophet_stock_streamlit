@@ -1,0 +1,19 @@
+################################################################################
+# This requirements file has been automatically generated from `Pipfile` with
+# `pipenv-to-requirements`
+#
+#
+# This has been done to maintain backward compatibility with tools and services
+# that do not support `Pipfile` yet.
+#
+# Do NOT edit it directly, use `pipenv install [-d]` to modify `Pipfile` and
+# `Pipfile.lock` and then regenerate `requirements*.txt`.
+################################################################################
+
+fbprophet==0.6
+matplotlib==3.2.2
+pandas==1.0.5
+plotly==4.8.2
+pystan==2.19.1.1
+streamlit==0.62.1
+yfinance==0.1.45
